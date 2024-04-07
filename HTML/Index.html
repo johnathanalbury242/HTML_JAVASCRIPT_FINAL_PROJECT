@@ -19,34 +19,38 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
-    <body class="bg-danger">
-        <header>
-            <!-- place navbar here -->
-            <nav class="navbar navbar-expand-lg bg-body-danger bg-white ">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/BLESS_CINEMA_BW.png" alt="Logo" width="auto" height="40" class="d-inline-block align-text-center">Blessed Cinema
+    <body class="p-2">
+        <header class="mb-4">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-secondary ">
+                <div class="container-xxl">
+                <a class="navbar-brand fw-bold text-white" href="/HTML/Index.html">
+                    <img src="/assets/BC_WHITE.png" alt="Logo" width="auto" height="70px" class="d-inline-block align-text-center">Blessed Cinema
                 </a>
+
+                <!-- Toggle button for mobile nav -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav"> 
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
+                        <a class="nav-link text-white" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/HTML/Portfolio.html">Portfolio</a>
+                        <a class="nav-link text-white" href="/HTML/Portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/HTML/Pricing.html">Pricing</a>
+                        <a class="nav-link text-white" href="/HTML/Pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/HTML/Blog.html">Blog</a>
+                        <a class="nav-link text-white" href="/HTML/Blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/HTML/Contact.html">Contact</a>
+                        <a class="nav-link text-white" href="/HTML/Contact.html">Contact</a>
                     </li>
                     </ul>
                 </div>
@@ -54,38 +58,50 @@
             </nav>
         </header>
         <main>
-            <div class="container-fluid mt-3 align-content">
-                <video src="/assets/2022_demo_reel (1080p).mp4" class="object-fit-scale" autoplay height="" width="80%"></video>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div class="d-grid gap-2 justify-content-md-center ">
-                <a href="/HTML/Contact.html" class="btn mb-3 btn-warning btn-lg">Make An Inquiry</a>
-            </div>
-            <div class="container-fluid mt-3" >
-                <div>
-                    <img src="/assets/Cabana Profile picture.jpg" alt="Profile picture" height="500px" width="auto" class="float-start">
+            <section id="main-section" class="my-2">
+                <div class="container-lg text-center">
+                    <div><h3>“VISUAL CONTENT THAT HIGHLIGHTS CREATORS AND ORGANIZATION”</h3></div>
+                    <div class="row">
+                        <div class="col my-3">
+                            <video src="/assets/2022_demo_reel (1080p).mp4" class="object-fit-scale img-fluid" autoplay controls="controls" width="100%"></video>
+                        </div>
+                    </div >
+                    <div class="d-grid gap-2 col-6 mx-auto"><a href="http://" class="btn my-2 p-3 btn-secondary" role="button">Make an Inquiry</a></div>
                 </div>
-                <div class="container-fluid clearfix">                    
-                    <h3 class="text-center">Everyday Create Something New!</h3>
-                    <p class="text-center">PROVIDING UNSUNG CREATORS & LOW-ENGAGEMENT ORGANIZATIONS, WITH NARRATIVE-DRIVEN VISUAL CONTENT TO HIGHLIGHT THEIR STORIES.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <a href="/HTML/Our_Story.html" class="btn btn-warning btn-lg" role="button">Our Story</a>
-                    </div>
+            </section>
+            
+            <div class="container my-4">
+                <div>
+                    <hr>
+                </div>
             </div>
+
+            <section id="main-about">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/assets/Cabana Profile picture.jpg" alt="Profile picture" height="100px" width="auto" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <h3 class="text-center">Everyday Create Something New!</h3>
+                            <p class="text-center">PROVIDING UNSUNG CREATORS & LOW-ENGAGEMENT ORGANIZATIONS, WITH NARRATIVE-DRIVEN VISUAL CONTENT TO HIGHLIGHT THEIR STORIES.</p>
+                            <a href="/HTML/Our_Story.html" class="btn btn-warning btn-lg" role="button">Our Story</a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
             
         </main>
-        <footer>
-            <div class="container-fluid text-center text-black bg-white fixed-bottom">
+        <footer class="bg-black">
+            <div class="container-fluid mb-0 mt-4 p-2 text-center sticky-bottom">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn btn-warning" role="button"><i class="bi bi-instagram"></i></a>
-                    <a href="https://vimeo.com/user107911712" class="btn btn-warning" role="button"><i class="bi bi-vimeo"></i></a>
-                    <a href="https://www.youtube.com/@blessedcinema6087" class="btn btn-warning" role="button"><i class="bi bi-youtube"></i></a>
-                    
-                  </div>
-                <p>&copy;Johnathan Albury 2024</p>
+                    <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
+                    <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
+                    <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
             </div>
+            <div><p class="text-white text-center">&copy;Johnathan Albury 2024</p></div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
