@@ -67,8 +67,10 @@
                             <hr>
                         </div>
                     </div>
-                    <div class="row g-3 p-3 shadow-lg">
-                        <div class="col-lg-6 text-center ">
+                    
+                    <div class="row p-3 shadow-lg">
+                        
+                        <div class="col-xxl-6 text-center ">
                             <div class="p-4 my-2 bg-secondary-subtle">
                                 <h3><i class="bi bi-geo-alt-fill text-primary"></i></h3>
                                 <h4 class="my-lg-2">Address</h4>
@@ -80,25 +82,50 @@
                                 <p class="text-muted">johnathanalbury3@gmail.com</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <form action="">
+
+                        <div class="col-xxl-6">
+                            <h3>Get in Touch!</h3>
+                            <form>
                                 <div class="row">
+
                                     <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstName">
+                                            <label for="firstName">First Name:</label>
+                                        </div>
                                     </div>
+
                                     <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastName">
+                                            <label for="lastName">Last Name:</label>
+                                        </div>
                                     </div>
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="Subject"></textarea>
-                                        <label for="Subject">Enter Subject:</label>
+
+                                    
+                                    <div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="subject"></textarea>
+                                            <label for="Subject">Enter Subject:</label>
+                                        </div>                                        
                                     </div>
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2">Comments</label>
+
+                                    <div>
+                                        <div class="form-floating mb-3">
+                                            <input required type="email" class="form-control" id="email" placeholder="name@example.com">
+                                            <label for="email">Enter E-mail:</label>
+                                        </div>
                                     </div>
+
+                                    <div>
+                                        <div class="form-floating mb-3">
+                                            <textarea required class="form-control" placeholder="Leave a comment here" id="message" style="height: 50px"></textarea>
+                                            <label for="floatingTextarea2">Message:</label>
+                                        </div>
+                                    </div>
+
                                     <div class="d-grid gap-2 d-md-flex justify-content-center">
-                                        <button class="btn btn-primary " type="button">Submit</button>
+                                        <button class="btn btn-primary " type="button" onclick="sendEmail(); reset(); return false">Submit</button>
                                     </div>
                                 </div>
                             </form> 
@@ -107,14 +134,16 @@
                 </div>
             </section>
         </main>
-        <footer class="bg-black">
-            <div class="container-fluid mb-0 mt-4 p-2 text-center sticky-bottom">
+        <footer>
+            <div class="container-fluid mb-0 mt-4 p-2 text-center fixed-bottom bg-black">
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
                     <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
                     <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
             </div>
-            <div><p class="text-white text-center">&copy;Johnathan Albury 2024</p></div>
+            <div>
+                <p class="text-white text-center">&copy;Johnathan Albury 2024</p>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -128,5 +157,25 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "johnathanalbury3@gmail.com",
+                Password : "E7600386B62E8D3DED3C95AFFCAF41B29FCD",
+                To : 'albury135648@btvi.edu.bs',
+                From : document.getElementById("email").value,
+                Subject : "New Message Form",
+                Body : "Name: " + document.getElementById("firstName").value + " " + document.getElementById("lastName").value 
+                + "<br> Email: " + document.getElementById("email").value 
+                + "<br> Subject: "+ document.getElementById("subject").value 
+                + 
+                "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message sent successfully!")
+);
+            }
+        </script>
     </body>
 </html>
