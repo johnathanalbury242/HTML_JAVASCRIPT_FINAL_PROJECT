@@ -22,10 +22,10 @@
         <header class="mb-4">
 
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg bg-secondary ">
+            <nav class="navbar navbar-expand-lg bg-white  sticky-top">
                 <div class="container-xxl">
-                <a class="navbar-brand fw-bold text-white" href="/HTML/Index.html">
-                    <img src="/assets/BC_WHITE.png" alt="Logo" width="auto" height="70px" class="d-inline-block align-text-center">Blessed Cinema
+                <a class="navbar-brand fw-bold text-black display-1" href="/HTML/Index.html">
+                    <img src="/assets/BLESS_CINEMA_BW.png" alt="Logo" width="auto" height="70px" class="d-inline-block align-text-center">Blessed Cinema
                 </a>
 
                 <!-- Toggle button for mobile nav -->
@@ -37,19 +37,19 @@
                 <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav"> 
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
+                        <a class="nav-link text-black fw-bold" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/HTML/Portfolio.html">Portfolio</a>
+                        <a class="nav-link text-black fw-bold" href="./Portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/HTML/Pricing.html">Pricing</a>
+                        <a class="nav-link text-black fw-bold" href="./Pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/HTML/Blog.html">Blog</a>
+                        <a class="nav-link text-black fw-bold" href="./Blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/HTML/Contact.html">Contact</a>
+                        <a class="nav-link text-black fw-bold" href="./Contact.html">Contact</a>
                     </li>
                     </ul>
                 </div>
@@ -58,50 +58,93 @@
         </header>
         <main>
             <section id="blog-header">
-                <article id="highlighted-article">
-                    <div class="container-xl justify-content-center align-content-between">
-                        <div class="row">
-                            <div class="col">
-                                <img src="/assets/Bodega Profile Picture.jpg" alt="" class="img-fluid">
+                <div class="container-xl text-center">
+                    <div>
+                        <h1 class="display-3">What have we been up too?</h1>
+                        <p class="lead">As a company, we place an importance on knowledge, look
+                            and see how we've been expanding as a company</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog-articles">
+                <article>
+                    <div class="container-xxl justify-content-center align-content-center my-5">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How are we implementing A.I into our services?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>A.I is here, and we love every bit of it!</strong> We've been paying attention to A.I every since the release of Chat GPT, and
+                                        while most have seen the recent craze as a problem for the job market we've been
+                                        taking advantage of every program. We have been able to improve not only our video
+                                        production, but also our overall productivity thanks to different A.I programs and
+                                        we look forward to seeing where the future with this technology takes us.
+                                </div>
                             </div>
-                            <div class="col">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ea quo beatae illo dolorum! Voluptatum dolorum cumque minima nostrum accusamus rem consequatur distinctio, eum aspernatur quo voluptatem reprehenderit, nesciunt vitae.</p>
-                                <a class="btn btn-primary btn-link" href="#" role="button">Link</a>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Adjusting to a new location!
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>We've moved!</strong> Change is difficult,
+                                    however we have adjusted quite well. For those who do not know we have moved back
+                                    home to the islands of The Bahamas. While we did enjoy our time spent in the United
+                                    States. We were blessed with an opportunity to return home and expand our business.
+                                    While we will miss all of the friends we've made, we know <strong>this is not the
+                                    last we will see of them!</strong> Until then we will be focusing on the stories of
+                                    the creatives and business of the beautiful islands of the Bahamas.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                New Production Equipment!
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Look forward to a production upgrade!</strong>
+                                    Here at Blessed Cinema, we take our quality of work very seriously. We have taken
+                                    the time to look over our footage, and have noticed that it's time for us to
+                                    increase our quality to keep up with, what is desired from our clients and the
+                                    market. So we have invested heavily into not only our video but also our lighting
+                                    and audio equipment. We look forward to implementing a new standard of visual
+                                    quality
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </article>
             </section>
-
-            <section id="blog-subsection">
-                <div class="container-xl">
-                    <h3>Latest Post</h3>
-                </div>
-                <div class="container-xl">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+        </main>
+        <footer >
+            <div class="container-fluid text-center text-black bg-black fixed-bottom z-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
+                            <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
+                            <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="bg-black">
-            <div class="container-fluid mb-0 mt-4 p-2 text-center sticky-bottom">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
-                    <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
-                    <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
+            <div class="row">
+                <div class="col">
+                    <p class="text-white text-center">&copy;Johnathan Albury 2024</p>
+                </div>
             </div>
-            <div><p class="text-white text-center">&copy;Johnathan Albury 2024</p></div>
-        </footer>
+        </footer >
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -21,40 +21,41 @@
 
     <body>
         <header class="mb-4">
-                <!-- navbar -->
-                <nav class="navbar navbar-expand-lg bg-secondary ">
-                    <div class="container-xxl">
-                    <a class="navbar-brand fw-bold text-white" href="/HTML/Index.html">
-                        <img src="/assets/BC_WHITE.png" alt="Logo" width="auto" height="70px" class="d-inline-block align-text-center">Blessed Cinema
-                    </a>
-    
-                    <!-- Toggle button for mobile nav -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <!-- navbar links -->
-                    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav"> 
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTML/Portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTML/Pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTML/Blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/HTML/Contact.html">Contact</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
-                </nav>
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-white  sticky-top">
+                <div class="container-xxl">
+                <a class="navbar-brand fw-bold text-black display-1" href="/HTML/Index.html">
+                    <img src="/assets/BLESS_CINEMA_BW.png" alt="Logo" width="auto" height="70px" class="d-inline-block align-text-center">Blessed Cinema
+                </a>
+
+                <!-- Toggle button for mobile nav -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav"> 
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" aria-current="page" href="/HTML/Our_Story.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" href="./Portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" href="./Pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-bold" href="./Contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </header>
         
         <main>
@@ -83,8 +84,8 @@
                             </div>
                         </div>
 
-                        <div class="col-xxl-6">
-                            <h3>Get in Touch!</h3>
+                        <div class="col-xxl-6 p-md-4 p-sm-4">
+                            <h3 >Get in Touch!</h3>
                             <form>
                                 <div class="row">
 
@@ -102,19 +103,22 @@
                                         </div>
                                     </div>
 
-                                    
-                                    <div>
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" placeholder="Leave a comment here" id="subject"></textarea>
-                                            <label for="Subject">Enter Subject:</label>
-                                        </div>                                        
-                                    </div>
 
                                     <div>
                                         <div class="form-floating mb-3">
                                             <input required type="email" class="form-control" id="email" placeholder="name@example.com">
                                             <label for="email">Enter E-mail:</label>
                                         </div>
+                                    </div>
+
+                                    <div>
+                                        <select class="form-select form-floating mb-3" aria-label="Default select example" id="select">
+                                            <option selected>Select a pricing package:</option>
+                                            <option value="Music-Video">Music Video Package</option>
+                                            <option value="Wedding-Package">Wedding Package</option>
+                                            <option value="Event-Recording">Event Recording Package</option>
+                                            <option value="Undecided">Undecided</option>
+                                        </select>
                                     </div>
 
                                     <div>
@@ -128,23 +132,32 @@
                                         <button class="btn btn-primary " type="button" onclick="sendEmail(); reset(); return false">Submit</button>
                                     </div>
                                 </div>
+
+
+                                
                             </form> 
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container-fluid mb-0 mt-4 p-2 text-center fixed-bottom bg-black">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
-                    <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
-                    <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
+        <footer >
+            <div class="container-fluid text-center text-black bg-black sticky-sm-bottom fixed-xl-bottom ">
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <a href="https://www.instagram.com/blessed_cinema/?hl=en" class="btn text-white border border-black" role="button"><i class="bi bi-instagram"></i></a>
+                            <a href="https://vimeo.com/user107911712" class="btn border border-black text-white" role="button"><i class="bi bi-vimeo"></i></a>
+                            <a href="https://www.youtube.com/@blessedcinema6087" class="btn border border-black text-white" role="button"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-white text-center">&copy;Johnathan Albury 2024</p>
+                </div>
             </div>
-            <div>
-                <p class="text-white text-center">&copy;Johnathan Albury 2024</p>
-            </div>
-        </footer>
+        </footer >
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -169,7 +182,7 @@
                 Subject : "New Message Form",
                 Body : "Name: " + document.getElementById("firstName").value + " " + document.getElementById("lastName").value 
                 + "<br> Email: " + document.getElementById("email").value 
-                + "<br> Subject: "+ document.getElementById("subject").value 
+                + "<br> Package: "+ document.getElementById("select").value 
                 + 
                 "<br> Message: " + document.getElementById("message").value
                 }).then(
